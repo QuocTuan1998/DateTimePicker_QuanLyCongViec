@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.datetimepicker_quanlycongviec.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtQuanLyCongViec"
+        android:text="Quản lý công việc hàng tuần"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#008000"
+        android:textSize="22dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuanLyCongViec"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtCongViec"
+        android:text="Công Việc : "
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuanLyCongViec"
+        android:layout_toRightOf="@id/txtCongViec"
+        android:id="@+id/editCongViec"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editCongViec"
+        android:layout_marginTop="12dp"
+        android:id="@+id/txtNoiDung"
+        android:text="Nội dung : "
+        android:textSize="22dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCongViec"
+        android:layout_toRightOf="@id/txtNoiDung"
+        android:id="@+id/editNoiDung"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNoiDung"
+        android:id="@+id/txtNgayHT"
+        android:text="Ngày HT"
+        android:textSize="22dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editNoiDung"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtNgay"
+        android:text="1/4/2017"
+        android:textSize="22dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btnDate"
+        android:text="Date"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDate"
+        android:id="@+id/txtGioHT"
+        android:text="Giờ HT"
+        android:textSize="22dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDate"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtGio"
+        android:text="2:50 PM"
+        android:textSize="22dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="145dp"
+        android:id="@+id/btnTime"
+        android:text="Giờ"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTime"
+        android:textSize="2dp"
+        android:background="#008000"
+        android:id="@+id/txtText"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnThemCongViec"        android:text="Thêm CV"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnThemCongViec"
+        android:id="@+id/txtDanhSachCongViec"
+        android:text="Danh Sách công việc : "
+        android:textColor="#FFFFFF"
+        android:background="#008000"
+        android:textSize="20dp"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtDanhSachCongViec"
+        android:id="@+id/lvCongViec">
+
+    </ListView>
+</RelativeLayout>
